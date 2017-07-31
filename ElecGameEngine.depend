@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1501477284 source:d:\code_blocks\results\elecgameengine\src\core\game.cpp
+	"Game.h"
+	<iostream>
+
+1501476804 d:\code_blocks\results\elecgameengine\include\game.h
+	<string>
+	<cstddef>
+	"Display.h"
+
+1501476731 d:\code_blocks\results\elecgameengine\include\display.h
+	<string>
+
+1501477296 source:d:\code_blocks\results\elecgameengine\src\render\display.cpp
+	"Display.h"
+	<iostream>
+
+1501477528 source:d:\code_blocks\results\elecgameengine\test\main.cpp
+	"Game.h"
+
