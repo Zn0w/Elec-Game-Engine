@@ -13,9 +13,12 @@ class Game {
         virtual ~Game();
 
         void start();
+        virtual void update() = 0;
+        virtual void destroy() = 0;
 
     private:
-        Display* display;
+        Display display;
+        bool isRunning;
 
 };
 
