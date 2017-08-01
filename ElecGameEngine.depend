@@ -1,24 +1,26 @@
 # depslib dependency file v1.0
-1501492438 source:d:\code_blocks\results\elecgameengine\src\core\game.cpp
+1501568571 source:d:\code_blocks\results\elecgameengine\src\core\game.cpp
 	"Game.h"
 	<iostream>
 
-1501492478 d:\code_blocks\results\elecgameengine\include\game.h
+1501568373 d:\code_blocks\results\elecgameengine\include\game.h
 	<string>
 	<cstddef>
 	"Display.h"
+	"GameObject.h"
 
-1501490296 d:\code_blocks\results\elecgameengine\include\display.h
+1501560105 d:\code_blocks\results\elecgameengine\include\display.h
 	<string>
 	<SFML/Graphics.hpp>
+	"Renderer.h"
 
-1501492047 source:d:\code_blocks\results\elecgameengine\src\render\display.cpp
+1501560119 source:d:\code_blocks\results\elecgameengine\src\render\display.cpp
 	"Display.h"
 	<iostream>
 
-1501492416 source:d:\code_blocks\results\elecgameengine\test\main.cpp
-	"Game.h"
+1501568150 source:d:\code_blocks\results\elecgameengine\test\main.cpp
 	"TestGame.h"
+	"Box.h"
 
 1486729198 d:\cpp_libraries\sfml-2.4.2\include\sfml\graphics.hpp
 	<SFML/Window.hpp>
@@ -414,4 +416,28 @@
 
 1501490804 source:d:\code_blocks\results\elecgameengine\test\testgame.cpp
 	"TestGame.h"
+
+1501560043 source:d:\code_blocks\results\elecgameengine\src\render\renderer.cpp
+	"Renderer.h"
+
+1501558810 d:\code_blocks\results\elecgameengine\include\renderer.h
+	<vector>
+	<SFML/Graphics.hpp>
+	"GameObject.h"
+
+1501559969 source:d:\code_blocks\results\elecgameengine\src\core\gameobject.cpp
+	"GameObject.h"
+
+1501567837 d:\code_blocks\results\elecgameengine\include\gameobject.h
+	<string>
+	<map>
+	<vector>
+	<SFML/Graphics.hpp>
+
+1501568205 source:d:\code_blocks\results\elecgameengine\test\box.cpp
+	"Box.h"
+
+1501568228 d:\code_blocks\results\elecgameengine\test\box.h
+	<iostream>
+	"GameObject.h"
 

@@ -5,6 +5,7 @@
 #include <cstddef>
 
 #include "Display.h"
+#include "GameObject.h"
 
 class Game {
 

@@ -22,6 +22,8 @@ void Display::update() {
 
         window.clear(sf::Color::Black);
 
+        renderer.render(window);
+
         window.display();
     }
 }

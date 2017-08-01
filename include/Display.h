@@ -5,6 +5,8 @@
 
 #include <SFML/Graphics.hpp>
 
+#include "Renderer.h"
+
 class Display {
 
     public:
@@ -22,6 +24,8 @@ class Display {
         std::string title;
 
         sf::RenderWindow window;
+
+        Renderer renderer;
 
 };
 

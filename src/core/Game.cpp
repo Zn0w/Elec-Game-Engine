@@ -18,6 +18,13 @@ void Game::start() {
 
         update();
 
+        for (int i = 0; i < GameObject::objects.size(); i++) {
+            GameObject* object = GameObject::objects.at(i);
+
+            if (object->isActive())
+                object->update();
+        }
+
         display.update();
     }
 
