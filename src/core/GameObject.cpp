@@ -11,6 +11,16 @@ GameObject::GameObject(int x, int y, int width, int height) {
     objects.push_back(this);
 }
 
+GameObject::GameObject(int x, int y, int width, int height, std::string tag) {
+    this->x = x;
+    this->y = y;
+    this->width = width;
+    this->height = height;
+    this->tag = tag;
+
+    objects.push_back(this);
+}
+
 GameObject::~GameObject() {
 
 }

@@ -2,7 +2,6 @@
 #define GAMEOBJECT_H
 
 #include <string>
-#include <map>
 #include <vector>
 
 #include <SFML/Graphics.hpp>
@@ -11,6 +10,7 @@ class GameObject {
 
     public:
         GameObject(int x, int y, int width, int height);
+        GameObject(int x, int y, int width, int height, std::string tag);
         virtual ~GameObject();
 
         sf::RectangleShape draw();
@@ -39,6 +39,7 @@ class GameObject {
         int x, y, width, height;
         bool active = true;
         bool visible = true;
+        std::string tag;
 
 };
 
