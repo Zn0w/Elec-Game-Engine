@@ -1,6 +1,6 @@
 #include "Box.h"
 
-Box::Box(int x, int y, int width, int height) : GameObject(x, y, width, height) {
+Box::Box(int x, int y, int width, int height, std::string tag) : GameObject(x, y, width, height, tag) {
 
 }
 

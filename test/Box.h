@@ -7,7 +7,7 @@
 
 class Box : public GameObject {
     public:
-        Box(int x, int y, int width, int height);
+        Box(int x, int y, int width, int height, std::string tag);
         virtual ~Box();
 
         void update();
