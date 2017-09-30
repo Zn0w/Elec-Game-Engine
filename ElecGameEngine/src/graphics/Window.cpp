@@ -9,29 +9,31 @@ Window::Window(const char* windowTitle, int windowWidth, int windowHeight)
 }
 
 Window::~Window() {
-
+	glfwTerminate();
 }
 
 void Window::init() {
-	GLFWwindow* window;
-
 	if (!glfwInit())
-		std::cout << "GLFW error" << std::endl;
+		return;
 
 	window = glfwCreateWindow(width, height, title, NULL, NULL);
 	if (!window) {
 		glfwTerminate();
+		return;
 	}
 
 	glfwMakeContextCurrent(window);
+}
 
-	while (!glfwWindowShouldClose(window)) {
-		glClear(GL_COLOR_BUFFER_BIT);
+bool Window::closed() const {
+	return glfwWindowShouldClose(window);
+}
 
-		glfwSwapBuffers(window);
+void Window::clear() const {
+	glClear(GL_COLOR_BUFFER_BIT);
+}
 
-		glfwPollEvents();
-	}
-
-	glfwTerminate();
+void Window::update() const {
+	glfwSwapBuffers(window);
+	glfwPollEvents();
 }
