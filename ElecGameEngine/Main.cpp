@@ -3,8 +3,8 @@
 
 int main(void)
 {
-	Window window("Test window", 640, 480);
-	Renderer renderer;
+	elec::Window window("Test window", 640, 480);
+	elec::Renderer renderer;
 	
 	while (!window.closed()) {
 		window.clear();

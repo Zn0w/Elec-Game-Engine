@@ -2,15 +2,17 @@
 
 #include "GLFW/glfw3.h"
 
-class Renderer {
+namespace elec {
+	class Renderer {
 
-private:
+	private:
 
 
-public:
-	Renderer();
-	~Renderer();
+	public:
+		Renderer();
+		~Renderer();
 
-	void render();
+		void render();
 
-};
+	};
+}

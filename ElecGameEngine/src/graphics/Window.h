@@ -4,23 +4,25 @@
 
 #include <GLFW/glfw3.h>
 
-class Window {
+namespace elec {
+	class Window {
 
-private:
-	const char* title;
-	int width;
-	int height;
-	GLFWwindow* window;
+	private:
+		const char* title;
+		int width;
+		int height;
+		GLFWwindow* window;
 
-public:
-	Window(const char* windowTitle, int windowWidth, int windowHeight);
-	~Window();
+	public:
+		Window(const char* windowTitle, int windowWidth, int windowHeight);
+		~Window();
 
-	bool closed() const;
-	void clear() const;
-	void update() const;
+		bool closed() const;
+		void clear() const;
+		void update() const;
 
-private:
-	void init();
+	private:
+		void init();
 
-};
+	};
+}
