@@ -14,10 +14,13 @@ namespace elec {
 	void GameManager::start() {
 		game->init();
 
-		while (!window->closed()) {
+		while (!window->closed() && game->isRunning()) {
+			game->update();
 			window->clear();
 			renderer.render();
 			window->update();
 		}
+
+		game->destroy();
 	}
 }
