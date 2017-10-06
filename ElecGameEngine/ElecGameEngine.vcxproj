@@ -134,6 +134,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\entity\GameEntity.cpp" />
     <ClCompile Include="test\Main.cpp" />
     <ClCompile Include="src\gameFlowManaging\Game.cpp" />
     <ClCompile Include="src\gameFlowManaging\GameManager.cpp" />
@@ -141,6 +142,7 @@
     <ClCompile Include="src\graphics\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\entity\GameEntity.h" />
     <ClInclude Include="src\gameFlowManaging\Game.h" />
     <ClInclude Include="src\gameFlowManaging\GameManager.h" />
     <ClInclude Include="src\graphics\Renderer.h" />
