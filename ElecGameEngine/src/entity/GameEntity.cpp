@@ -1,8 +1,12 @@
 #include "GameEntity.h"
 
 namespace elec {
-	GameEntity::GameEntity() {
-
+	std::vector<GameEntity*> GameEntity::entities;
+	
+	GameEntity::GameEntity(int xPos, int yPos, int w, int h, const char* tag) 
+		: x(xPos), y(yPos), width(w), height(h)
+	{
+		entities.push_back(this);
 	}
 
 	GameEntity::~GameEntity() {
@@ -10,7 +14,13 @@ namespace elec {
 	}
 
 	void GameEntity::draw() {
-
+		glBegin(GL_QUADS);
+		glColor3f(1.0f, 0.0f, 0.0f);
+		glVertex2i(x, y);
+		glVertex2i(x + width, y);
+		glVertex2i(x + width, y + height);
+		glVertex2i(x, y + height);
+		glEnd();
 	}
 
 	bool GameEntity::isUpdating() {

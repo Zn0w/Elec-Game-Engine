@@ -1,16 +1,24 @@
 #pragma once
 
 #include <GLFW/glfw3.h>
+#include <vector>
 
 namespace elec {
 	class GameEntity {
 	
 	private:
-		bool updating;
-		bool rendering;
+		bool updating = true;
+		bool rendering = true;
+
+		int x, y, width, height;
+
+		const char* tag;
 
 	public:
-		GameEntity();
+		static std::vector<GameEntity*> entities;
+
+	public:
+		GameEntity(int xPos, int yPos, int w, int h, const char* t);
 		~GameEntity();
 
 		void draw();
