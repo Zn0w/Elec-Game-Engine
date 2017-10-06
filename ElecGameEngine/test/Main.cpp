@@ -35,12 +35,12 @@ int main(void)
 {
 	elec::Window window("Test window", 640, 480);
 	
+	MyEntity entity(0, 0, 15, 15, "player");
+
 	MyGame g;
 
 	elec::GameManager gameManager(&g, &window);
 	gameManager.start();
-
-	MyEntity entity(0, 0, 15, 15, "player");
 
 	return 0;
 }
