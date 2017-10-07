@@ -39,7 +39,7 @@ int main(void)
 {
 	elec::Window window("Test window", 640, 480);
 	
-	MyEntity entity(-1, -1, 2, 2, "player");
+	MyEntity entity(50, 50, 100, 100, "player");
 
 	MyGame g;
 

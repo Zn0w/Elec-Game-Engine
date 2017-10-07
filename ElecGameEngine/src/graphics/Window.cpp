@@ -33,6 +33,14 @@ namespace elec {
 
 		KeyboardInput::listenTo(window);
 
+		glOrtho(0,      // left
+			width,  // right
+			height, // bottom
+			0,      // top
+			0,      // zNear
+			1       // zFar
+		);
+
 		return true;
 	}
 
