@@ -17,8 +17,15 @@ namespace elec {
 
 		while (!window->closed() && game->isRunning()) {
 			game->update();
+			
+			for (GameEntity* entity : GameEntity::entities) {
+				if (entity->isUpdating())
+					entity->update();
+			}
+
 			renderer.clear();
 			renderer.render();
+			
 			window->update();
 		}
 

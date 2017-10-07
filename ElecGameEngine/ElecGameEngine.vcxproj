@@ -152,6 +152,9 @@
     <ClInclude Include="src\graphics\Window.h" />
     <ClInclude Include="src\input\KeyboardInput.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="todo.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

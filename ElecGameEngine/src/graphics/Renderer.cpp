@@ -18,7 +18,8 @@ namespace elec {
 	
 	void Renderer::render() {	
 		for (GameEntity* entity : GameEntity::entities) {
-			entity->draw();
+			if (entity->isRendering())
+				entity->draw();
 		}
 	}
 

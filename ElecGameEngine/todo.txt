@@ -1,9 +1,12 @@
+Test:
+	test game entity moving with arrow keys
+
 GameEntity:
-	fix GameEntity's fields visibility
+	---fix GameEntity's fields visibility
 
 Physics component:
 	basic collision detection
 	collision side detection
 
 Game flow managing:
-	game entity update
+	---game entity update

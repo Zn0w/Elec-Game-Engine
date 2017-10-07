@@ -6,7 +6,7 @@
 namespace elec {
 	class GameEntity {
 	
-	private:
+	protected:
 		bool updating = true;
 		bool rendering = true;
 

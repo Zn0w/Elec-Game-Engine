@@ -3,8 +3,8 @@
 namespace elec {
 	std::vector<GameEntity*> GameEntity::entities;
 	
-	GameEntity::GameEntity(int xPos, int yPos, int w, int h, const char* tag) 
-		: x(xPos), y(yPos), width(w), height(h)
+	GameEntity::GameEntity(int xPos, int yPos, int w, int h, const char* t) 
+		: x(xPos), y(yPos), width(w), height(h), tag(t)
 	{
 		entities.push_back(this);
 	}
