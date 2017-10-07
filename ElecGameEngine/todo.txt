@@ -1,5 +1,9 @@
+Graphics:
+	fixed fps rate (probably 60)
+	---move coordinates origin
+
 Test:
-	test game entity moving with arrow keys
+	---test game entity moving with arrow keys
 
 GameEntity:
 	---fix GameEntity's fields visibility
@@ -9,4 +13,5 @@ Physics component:
 	collision side detection
 
 Game flow managing:
+	fps limitation
 	---game entity update

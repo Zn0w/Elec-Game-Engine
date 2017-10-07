@@ -1,5 +1,7 @@
 #pragma once
 
+#include <iostream>
+
 #include "Game.h"
 #include "../graphics/Window.h"
 #include "../graphics/Renderer.h"

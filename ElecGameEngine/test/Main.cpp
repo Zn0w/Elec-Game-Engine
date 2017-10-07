@@ -29,7 +29,16 @@ public:
 	}
 	
 	void update() {
-		std::cout << "Entity update " << tag << std::endl;
+		if (elec::KeyboardInput::isKeyPressed(262)) // Right arrow key
+			x += 1;
+		
+		if (elec::KeyboardInput::isKeyPressed(263)) // Left arrow key
+			x -= 1;
+
+		if (elec::KeyboardInput::isKeyPressed(264)) // Down arrow key
+			y += 1;
+		if (elec::KeyboardInput::isKeyPressed(265)) // Up arrow key
+			y -= 1;
 	}
 };
 
