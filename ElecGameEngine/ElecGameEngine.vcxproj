@@ -137,6 +137,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\entity\GameEntity.cpp" />
+    <ClCompile Include="src\input\KeyboardInput.cpp" />
     <ClCompile Include="test\Main.cpp" />
     <ClCompile Include="src\gameFlowManaging\Game.cpp" />
     <ClCompile Include="src\gameFlowManaging\GameManager.cpp" />
@@ -149,6 +150,7 @@
     <ClInclude Include="src\gameFlowManaging\GameManager.h" />
     <ClInclude Include="src\graphics\Renderer.h" />
     <ClInclude Include="src\graphics\Window.h" />
+    <ClInclude Include="src\input\KeyboardInput.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

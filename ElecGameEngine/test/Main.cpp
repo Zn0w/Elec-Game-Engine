@@ -4,6 +4,7 @@
 #include "../src/gameFlowManaging/Game.h"
 #include "../src/gameFlowManaging/GameManager.h"
 #include "../src/entity/GameEntity.h"
+#include "../src/input/KeyboardInput.h"
 
 class MyGame : public elec::Game {
 public:
@@ -13,6 +14,9 @@ public:
 
 	void update() {
 		std::cout << "game update\n";
+
+		if (elec::KeyboardInput::isKeyPressed(56))
+			std::cout << "Key '8' is pressed!\n";
 	}
 
 	void destroy() {

@@ -31,6 +31,8 @@ namespace elec {
 			return false;
 		}
 
+		KeyboardInput::listenTo(window);
+
 		return true;
 	}
 
