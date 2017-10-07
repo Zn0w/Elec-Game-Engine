@@ -4,7 +4,7 @@ namespace elec {
 	Window::Window(const char* windowTitle, int windowWidth, int windowHeight)
 		: title(windowTitle), width(windowWidth), height(windowHeight)
 	{
-		if (init())
+		if (!init())
 			glfwTerminate();
 	}
 
