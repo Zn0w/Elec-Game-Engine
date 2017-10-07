@@ -13,7 +13,9 @@ namespace elec {
 		Renderer();
 		~Renderer();
 
+		void init(int width, int height);
 		void render();
+		void clear();
 
 	};
 }

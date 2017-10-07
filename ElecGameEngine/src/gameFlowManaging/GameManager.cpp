@@ -13,10 +13,11 @@ namespace elec {
 	
 	void GameManager::start() {
 		game->init();
+		renderer.init(window->getWidth(), window->getHeight());
 
 		while (!window->closed() && game->isRunning()) {
 			game->update();
-			window->clear();
+			renderer.clear();
 			renderer.render();
 			window->update();
 		}

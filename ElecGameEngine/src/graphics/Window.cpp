@@ -33,14 +33,6 @@ namespace elec {
 
 		KeyboardInput::listenTo(window);
 
-		glOrtho(0,      // left
-			width,  // right
-			height, // bottom
-			0,      // top
-			0,      // zNear
-			1       // zFar
-		);
-
 		return true;
 	}
 
@@ -48,12 +40,16 @@ namespace elec {
 		return glfwWindowShouldClose(window);
 	}
 
-	void Window::clear() const {
-		glClear(GL_COLOR_BUFFER_BIT);
-	}
-
 	void Window::update() const {
 		glfwSwapBuffers(window);
 		glfwPollEvents();
+	}
+
+	int Window::getWidth() {
+		return width;
+	}
+
+	int Window::getHeight() {
+		return height;
 	}
 }

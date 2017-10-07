@@ -9,9 +9,20 @@ namespace elec {
 
 	}
 
+	void Renderer::init(int width, int height) {
+		glMatrixMode(GL_PROJECTION);
+		glOrtho(0, width, height, 0, 1, -1);
+		glMatrixMode(GL_MODELVIEW);
+		glEnable(GL_TEXTURE_2D);
+	}
+	
 	void Renderer::render() {	
 		for (GameEntity* entity : GameEntity::entities) {
 			entity->draw();
 		}
+	}
+
+	void Renderer::clear() {
+		glClear(GL_COLOR_BUFFER_BIT);
 	}
 }

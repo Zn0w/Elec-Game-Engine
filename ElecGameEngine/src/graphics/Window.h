@@ -24,6 +24,9 @@ namespace elec {
 		void clear() const;
 		void update() const;
 
+		int getWidth();
+		int getHeight();
+
 	private:
 		bool init();
 
