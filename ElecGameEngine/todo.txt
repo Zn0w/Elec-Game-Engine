@@ -1,0 +1,9 @@
+GameEntity:
+	fix GameEntity's fields visibility
+
+Physics component:
+	basic collision detection
+	collision side detection
+
+Game flow managing:
+	game entity update
