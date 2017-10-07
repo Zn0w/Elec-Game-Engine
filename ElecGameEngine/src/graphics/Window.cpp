@@ -1,33 +1,37 @@
 #include "Window.h"
 
-#include <GLFW/glfw3.h>
-
 namespace elec {
 	Window::Window(const char* windowTitle, int windowWidth, int windowHeight)
 		: title(windowTitle), width(windowWidth), height(windowHeight)
 	{
-		init();
+		if (init())
+			glfwTerminate();
 	}
 
 	Window::~Window() {
 		glfwTerminate();
 	}
 
-	void Window::init() {
-		if (!glfwInit())
-			return;
+	bool Window::init() {
+		if (!glfwInit()) {
+			std::cout << "Failed to initialize GLFW\n";
+			return false;
+		}
 
 		window = glfwCreateWindow(width, height, title, NULL, NULL);
 		if (!window) {
-			glfwTerminate();
-			return;
+			std::cout << "Failed to create window\n";
+			return false;
 		}
 
 		glfwMakeContextCurrent(window);
 
 		if (glewInit() != GLEW_OK) {
-
+			std::cout << "Failed to initialize GLEW\n";
+			return false;
 		}
+
+		return true;
 	}
 
 	bool Window::closed() const {

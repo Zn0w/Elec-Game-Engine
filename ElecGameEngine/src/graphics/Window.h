@@ -23,7 +23,7 @@ namespace elec {
 		void update() const;
 
 	private:
-		void init();
+		bool init();
 
 	};
 }
