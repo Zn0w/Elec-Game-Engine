@@ -1,9 +1,9 @@
+#include <iostream>
+
 #include "../src/graphics/Window.h"
 #include "../src/gameFlowManaging/Game.h"
 #include "../src/gameFlowManaging/GameManager.h"
 #include "../src/entity/GameEntity.h"
-
-#include <iostream>
 
 class MyGame : public elec::Game {
 public:
@@ -35,7 +35,7 @@ int main(void)
 {
 	elec::Window window("Test window", 640, 480);
 	
-	MyEntity entity(0, 0, 15, 15, "player");
+	MyEntity entity(-1, -1, 2, 2, "player");
 
 	MyGame g;
 

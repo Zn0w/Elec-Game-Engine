@@ -24,6 +24,10 @@ namespace elec {
 		}
 
 		glfwMakeContextCurrent(window);
+
+		if (glewInit() != GLEW_OK) {
+
+		}
 	}
 
 	bool Window::closed() const {
