@@ -62,4 +62,8 @@ namespace elec {
 	int GameEntity::getHeight() {
 		return height;
 	}
+
+	const char* GameEntity::getTag() {
+		return tag;
+	}
 }

@@ -38,5 +38,7 @@ namespace elec {
 
 		int getWidth();
 		int getHeight();
+
+		const char* getTag();
 	};
 }

@@ -28,6 +28,7 @@ public:
 
 			if (elec::KeyboardInput::isKeyPressed(264)) // Down arrow key
 				y += 1;
+
 			if (elec::KeyboardInput::isKeyPressed(265)) // Up arrow key
 				y -= 1;
 		}
@@ -38,16 +39,12 @@ public:
 class MyGame : public elec::Game {
 
 public:
-	MyEntity* entity1;
-	MyEntity* entity2;
-	
 	void init() {
-		entity1 = new MyEntity(250, 200, 100, 35, "player");
-		entity2 = new MyEntity(100, 80, 50, 50, "box");
+		std::cout << "game init\n";
 	}
 
 	void update() {
-		if (elec::CollisionDetector::isColliding(entity1, entity2))
+		if (elec::CollisionDetector::isColliding("player", "box"))
 			std::cout << "Player is hitting the box!\n";
 	}
 
@@ -61,7 +58,8 @@ int main(void)
 {
 	elec::Window window("Test window", 640, 480);
 	
-	//MyEntity entity(250, 200, 100, 35, "player");
+	MyEntity entity1(250, 200, 100, 35, "player");
+	MyEntity entity2(100, 80, 50, 50, "box");
 
 	MyGame g;
 

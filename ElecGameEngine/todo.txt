@@ -9,8 +9,8 @@ GameEntity:
 	---fix GameEntity's fields visibility
 
 Math:
-	basic collision detection
-	basic collision detection by tag
+	---basic collision detection
+	---basic collision detection by tag
 	collision side detection
 	collision side detection by tag
 

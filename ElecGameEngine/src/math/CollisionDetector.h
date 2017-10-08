@@ -14,10 +14,10 @@ namespace elec {
 		};
 		
 		static bool isColliding(GameEntity* thisEntity, GameEntity* otherEntity);
-		static bool isColliding(GameEntity* thisEntity, const char* tag);
+		static bool isColliding(const char* thisTag, const char* otherTag);
 
 		static bool isColliding(GameEntity* thisEntity, GameEntity* otherEntity, CollisionSide collisionSide);
-		static bool isColliding(GameEntity* thisEntity, const char* tag, CollisionSide collisionSide);
+		static bool isColliding(const char* thisTag, const char* otherTag, CollisionSide collisionSide);
 
 	};
 }
