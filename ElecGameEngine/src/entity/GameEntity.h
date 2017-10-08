@@ -32,5 +32,11 @@ namespace elec {
 
 		void enableRendering();
 		void disableRendering();
+
+		int getX();
+		int getY();
+
+		int getWidth();
+		int getHeight();
 	};
 }

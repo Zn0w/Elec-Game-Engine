@@ -46,4 +46,20 @@ namespace elec {
 	void GameEntity::disableRendering() {
 
 	}
+
+	int GameEntity::getX() {
+		return x;
+	}
+
+	int GameEntity::getY() {
+		return y;
+	}
+
+	int GameEntity::getWidth() {
+		return width;
+	}
+
+	int GameEntity::getHeight() {
+		return height;
+	}
 }

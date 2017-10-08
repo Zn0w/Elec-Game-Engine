@@ -138,6 +138,7 @@
   <ItemGroup>
     <ClCompile Include="src\entity\GameEntity.cpp" />
     <ClCompile Include="src\input\KeyboardInput.cpp" />
+    <ClCompile Include="src\math\CollisionDetector.cpp" />
     <ClCompile Include="test\Main.cpp" />
     <ClCompile Include="src\gameFlowManaging\Game.cpp" />
     <ClCompile Include="src\gameFlowManaging\GameManager.cpp" />
@@ -151,6 +152,7 @@
     <ClInclude Include="src\graphics\Renderer.h" />
     <ClInclude Include="src\graphics\Window.h" />
     <ClInclude Include="src\input\KeyboardInput.h" />
+    <ClInclude Include="src\math\CollisionDetector.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="todo.txt" />
