@@ -26,14 +26,14 @@ namespace elec {
 				if (entity->isUpdating())
 					entity->update();
 			}
-
+			
 			renderer.clear();
 			renderer.render();
 
 			currentTime = glfwGetTime();
 			frameCount++;
 			if (currentTime - previousTime >= 1.0) {
-				std::cout << "FPS: " << frameCount << std::endl;
+				std::cout << "FPS: " << (int) (frameCount / (currentTime - previousTime)) << std::endl;
 				frameCount = 0;
 				previousTime = currentTime;
 			}

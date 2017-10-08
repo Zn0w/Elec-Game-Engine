@@ -8,10 +8,10 @@ Test:
 GameEntity:
 	---fix GameEntity's fields visibility
 
-Physics component:
+Math:
 	basic collision detection
 	collision side detection
 
 Game flow managing:
-	fps limitation
+	---fps limitation
 	---game entity update

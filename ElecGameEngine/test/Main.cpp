@@ -23,13 +23,27 @@ public:
 };
 
 class MyEntity : public elec::GameEntity {
+
+private:
+	int speedX = 1;
+	int speedY = 1;
+
 public:
 	MyEntity(int x, int y, int w, int h, const char* t) : elec::GameEntity(x, y, w, h, t) {
 
 	}
 	
 	void update() {
-		if (elec::KeyboardInput::isKeyPressed(262)) // Right arrow key
+		x += speedX;
+		y += speedY;
+
+		if (x + width >= 640 || x <= 0)
+			speedX *= -1;
+
+		if (y + height >= 480 || y <= 0)
+			speedY *= -1;
+		
+		/*if (elec::KeyboardInput::isKeyPressed(262)) // Right arrow key
 			x += 1;
 		
 		if (elec::KeyboardInput::isKeyPressed(263)) // Left arrow key
@@ -38,8 +52,9 @@ public:
 		if (elec::KeyboardInput::isKeyPressed(264)) // Down arrow key
 			y += 1;
 		if (elec::KeyboardInput::isKeyPressed(265)) // Up arrow key
-			y -= 1;
+			y -= 1;*/
 	}
+
 };
 
 int main(void)

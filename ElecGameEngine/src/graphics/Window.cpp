@@ -33,6 +33,8 @@ namespace elec {
 
 		KeyboardInput::listenTo(window);
 
+		glfwSwapInterval(-1);
+
 		return true;
 	}
 
