@@ -1,5 +1,11 @@
+Renderer:
+	don't render anything, except for camera area
+
+Camera:
+	moving camera
+
 Graphics:
-	fixed fps rate (probably 60)
+	---fixed fps rate (probably 60)
 	---move coordinates origin
 
 Test:
@@ -11,8 +17,8 @@ GameEntity:
 Math:
 	---basic collision detection
 	---basic collision detection by tag
-	collision side detection
-	collision side detection by tag
+	---collision side detection
+	---collision side detection by tag
 
 Game flow managing:
 	---fps limitation

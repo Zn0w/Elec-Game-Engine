@@ -31,6 +31,18 @@ public:
 
 			if (elec::KeyboardInput::isKeyPressed(265)) // Up arrow key
 				y -= 1;
+
+			if (elec::CollisionDetector::isColliding("player", "box", elec::CollisionDetector::TOP))
+				y += 1;
+
+			if (elec::CollisionDetector::isColliding("player", "box", elec::CollisionDetector::BOTTOM))
+				y -= 1;
+
+			if (elec::CollisionDetector::isColliding("player", "box", elec::CollisionDetector::LEFT))
+				x += 1;
+
+			if (elec::CollisionDetector::isColliding("player", "box", elec::CollisionDetector::RIGHT))
+				x -= 1;
 		}
 	}
 
@@ -44,8 +56,7 @@ public:
 	}
 
 	void update() {
-		if (elec::CollisionDetector::isColliding("player", "box"))
-			std::cout << "Player is hitting the box!\n";
+		
 	}
 
 	void destroy() {
